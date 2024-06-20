@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendarz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalendarz</h1>
+    </header>
+    <div id="cal">
+        <div id="container">
+            <div id="header">
+                <button id="backButton">Poprzedni</button>
+                <div id="monthDisplay"></div>
+                <button id="nextButton">Następny</button>
+            </div>
+            <div id="weekdays">
+                <div>Poniedziałek</div>
+                <div>Wtorek</div>
+                <div>Środa</div>
+                <div>Czwartek</div>
+                <div>Piątek</div>
+                <div>Sobota</div>
+                <div>Niedziela</div>
+            </div>
+            <div id="calendar"></div>
+        </div>
+    </div>
+    <div id="newActivityModal" class="modal">
+        <h2>Nowe zadanie</h2>
+        <input type="text" id="activityTitleInput" placeholder="Tytuł zadania">
+        <button id="saveButton">Zapisz</button>
+        <button id="cancelButton">Anuluj</button>
+    </div>
+    <div id="editActivityModal" class="modal">
+        <h2>Edytuj zadanie</h2>
+        <input type="text" id="editActivityTitleInput" placeholder="Tytuł zadania">
+        <button id="editSaveButton">Zapisz</button>
+        <button id="editCancelButton">Anuluj</button>
+        <button id="deleteButton">Usuń</button>
+    </div>
+    <div id="modalBackDrop" style="display:none;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
