@@ -3,6 +3,8 @@ body {
     background-color: #E3F4F4;
 }
 
+
+
 header {
     display: flex;
     flex-direction: row;
@@ -177,71 +179,99 @@ button {
 }
 
 @media (max-width: 768px) {
+
+
     #calendar {
-        justify-content: center;
-        align-items: center;
+      justify-content: center;
+      align-items: center;
     }
-
+  
+  
     #newActivityModal,
-    #editActivityModal {
-        margin-top: 10px;
+    #deleteActivityModal {
+      margin-top: 10px; 
     }
-
+  
     body {
-        font-size: 100%;
-    }
-
-    .day {
-        width: 100px;
-        height: 75px;
-        font-size: 12px;
-    }
-
-    #header {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 22px;
+      font-size: 100%; 
     }
 
     #weekdays {
-        display: none;
+      padding-left: 0;
     }
-
+  
     #calendar {
-        width: 100%;
-        grid-template-columns: repeat(7, 1fr);
+      padding-left: 0;
     }
-}
-
-@media (max-width: 480px) {
+  
+    .day {
+      width: 100px;
+      height: 75px;
+      font-size: 12px;
+    }
+  
+    #header {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 22px;
+    }
+  
+    #weekdays {
+      display: none;
+    }
+  
     #calendar {
-        justify-content: center;
-        align-items: center;
+      width: 100%;
+      grid-template-columns: repeat(7, 1fr);
     }
-
+  }
+  
+  @media (max-width: 480px) {
+  
+    #calendar {
+      justify-content: center;
+      align-items: center;
+    }
+  
     #newActivityModal,
-    #editActivityModal {
-        margin-top: 10px;
+    #deleteActivityModal {
+      margin-top: 10px;
     }
 
-    .day {
-        width: 90px;
-        height: 70px;
-        font-size: 10px;
+    .days {
+      width: 90%;
+      height: auto;
+      margin: 5px;
     }
-
-    #header {
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 20px;
-    }
-
+  
     #weekdays {
-        display: none;
+      padding-left: 0;
     }
-
+  
     #calendar {
-        width: 100%;
-        grid-template-columns: repeat(7, 1fr);
+      padding-left: 0;
     }
-}
+  
+    .day {
+      width: 90px;
+      height: 70px;
+      font-size: 10px;
+    }
+  
+    #header {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 20px;
+    }
+  
+    #weekdays {
+      display: none;
+    }
+  
+    #calendar {
+      width: 100%;
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  
+  
